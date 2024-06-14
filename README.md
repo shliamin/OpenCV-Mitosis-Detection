@@ -1,6 +1,4 @@
-# Automated Mitosis Detection and Analysis in Histological Images Using OpenCV and Image Processing Techniques
-
-## Efim Shliamin
+## Efim Shliamin: Automated Mitosis Detection and Analysis in Histological Images Using OpenCV and Image Processing Techniques
 
 ### Prerequisites
 
