@@ -1,30 +1,59 @@
-# Mitosis-Detection
-This is a python app using opencv to detect the number of mitosis on the images
+# Automated Mitosis Detection
 
-# Cell Division: Mitosis Detection
+This repository contains a program that performs automated detection of mitoses in histological images using OpenCV and image processing techniques. The program processes all images in a specified directory, segments the images to detect brown regions (which represent mitoses), and analyzes the results.
 
-## Overview
-This Python application leverages OpenCV to detect and analyze mitotic figures in microscopic images, facilitating research in cellular biology and medical diagnostics.
+## Prerequisites
 
-## Setup
-To run this application:
-```bash
-git clone https://github.com/shliamin/OpenCV-Mitosis-Detection
-cd OpenCV-Mitosis-Detection
-pip install -r requirements.txt
-conda activate .venv
-jupyter notebook OpenCV-Mitosis-Detection.ipynb
+To run this program, you need to have the following installed:
+- Python 3.9 or later
+- Miniconda or Anaconda
+
+## Installation
+
+Follow these steps to set up your environment and install the necessary packages.
+
+### Step 1: Install Miniconda
+
+Download and install Miniconda for your platform from the [official Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
+
+### Step 2: Create a Conda Environment
+
+Open your terminal and create a new Conda environment with Python 3.9:
+
+```
+conda create --name mitosis_env python=3.9
+conda activate mitosis_env
 ```
 
-Conda:
+### Step 3: Install Required Packages
 
-```bash
-jupytirer-lab 
-conda activate .venv
-conda deactivate
+Install the required packages using ```conda``` and ```pip```:
+
+```
+conda install numpy matplotlib
+pip install imutils opencv-python
 ```
 
-## Features
-Automated detection of mitosis in images.
-Detailed image analysis using OpenCV.
-Jupyter Notebook for easy visualization and modification.
+### Step 4: Add the Conda Environment to Jupyter
+
+To use the Conda environment in Jupyter Notebook, install ```ipykernel``` and add the environment:
+
+```
+conda install ipykernel
+python -m ipykernel install --user --name=mitosis_env --display-name "Python (mitosis_env)"
+```
+
+### Step 5: Run Jupyter Notebook
+
+Start Jupyter Notebook:
+
+```
+jupyter notebook
+```
+
+## Usage:
+
+- Place your images in the ```mitosis_data_set/``` directory.
+- Run the Jupyter Notebook and execute the cells to process the images and display the results.
+
+
